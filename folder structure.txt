@@ -1,0 +1,20 @@
+project/
+├── data/                  # Stores raw, cleaned, sampled, and shuffled data
+│   ├── input_data.csv     # Raw input data
+│   ├── cleaned_data.csv   # Cleaned data
+│   ├── sampled_data.csv   # Sampled data
+│   ├── shuffled_data.csv  # Shuffled data
+│   ├── test_data.csv      # Test data for evaluation
+├── models/                # Contains trained models
+│   ├── ner_model/         # Trained spaCy model
+│   └── ner_model.joblib   # Trained model saved as a joblib file
+├── output/                # Contains pipeline outputs
+│   ├── training_data.json # JSON file for model training
+│   ├── predicted_entities.csv # Model predictions
+├── scripts/               # Python scripts for each pipeline stage
+│   ├── preprocess.py      # Preprocessing and cleaning
+│   ├── sample_shuffle.py  # Sampling and shuffling
+│   ├── json_converter.py  # Convert CSV to JSON
+│   ├── train_model.py     # Train the NER model
+│   └── test_model.py      # Test the trained model
+└── main.py                # Main script to run the pipeline

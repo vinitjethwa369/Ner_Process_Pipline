@@ -1,0 +1,5 @@
+echo "AppData/" >> .gitignore
+echo "Documents/" >> .gitignore
+echo "Cookies/" >> .gitignore
+echo "My Documents/" >> .gitignore
+# Add any other directories you want to ignore
